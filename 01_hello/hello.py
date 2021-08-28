@@ -6,4 +6,4 @@ being thorough :)
 
 """
 
-print('Hello, World!')
+print('Hello, World!') # This also doubles as the commenting tutorial.
