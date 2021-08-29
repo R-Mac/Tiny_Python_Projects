@@ -1,4 +1,7 @@
-#!/usr/bin/env python3
+#!/usr/bin/env python
+# The above line is used to indicate to the operating system what program 
+# use for the rest of the program
+# Purpose: To test the hello py script
 """tests for hello.py"""
 
 import os
