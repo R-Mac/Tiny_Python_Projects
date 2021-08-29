@@ -14,15 +14,25 @@ Version4: added seperate get_args() function to process arguments
 """
 import argparse
 
-def get_args():
-    parser = argparse.ArgumentParser(description="Say Hello")
-    parser.add_argument('-n','--name',metavar='name',default='World',help='Name to greet',)
-    args = parser.parse_args()
 
+# -------------------------------------------------------------------
+def get_args():
+    """Process command line arguments"""
+    parser = argparse.ArgumentParser(description="Say Hello")
+    parser.add_argument(
+        "-n", "--name", metavar="name", default="World", help="Name to greet"
+    )
+    return parser.parse_args()
+
+
+# -------------------------------------------------------------------
 def main():
+    """Return Hello  and then a passed argument, World by default"""
     args = get_args()
 
-    print('Hello, ' + args.name + '!') # This also doubles as the commenting tutorial.
+    print("Hello, " + args.name + "!")  # This also doubles as the commenting tutorial.
 
-if __name__ == '__main__':
+
+# -------------------------------------------------------------------
+if __name__ == "__main__":
     main()
